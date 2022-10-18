@@ -1887,7 +1887,7 @@ admin.topics().createPartitionedTopic(topicName, numPartitions);
 
 ### Create missed partitions
 
-When topic auto-creation is disabled, and you have a partitioned topic without any partitions, you can use the [`create-missed-partitions`](reference-pulsar-admin.md#create-missed-partitions) command to create partitions for the topic.
+When topic auto-creation is disabled, and you have a partitioned topic without any partitions, you can use the [`create-missed-partitions`](reference-pulsar-admin.md#create-missed-partitions) command to create partitions for the topic, and you can also specify the subscription list to create subscriptions for all partitions of the topic.
 
 ````mdx-code-block
 <Tabs 
